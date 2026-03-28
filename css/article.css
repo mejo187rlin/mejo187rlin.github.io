@@ -1,0 +1,157 @@
+#landing {
+    background-image: url('../assets/article-landing-image.png');
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    color: white;
+    padding-left: 20px;
+}
+
+#article-title {
+    background: -webkit-linear-gradient(0.9turn, var(--white), var(--lightblue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.article-section {
+    padding: 20px;
+    margin-top: 40px;
+}
+.article-header {
+    font-family: "Hind";
+    font-size: 20px;
+    color: var(--mainblue) !important;
+}
+
+.article-text {
+    margin-top: 24px;
+    font-family: "Hind";
+    line-height: 40px;
+    color: var(--text);
+}
+
+.article-image {
+    width: 100%;
+    margin-top: 16px;
+}
+.article-image-credit {
+    text-align: right;;
+}
+
+#article-interactive-container {
+    position: relative;
+}
+#article-interactive {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 10%;
+}
+#click-container1 {
+    margin-top: 10%;
+}
+#click-container2 {
+    margin-top: 10%;
+}
+
+.clickme, .click-title {
+    background: -webkit-linear-gradient(0.9turn, var(--lightblue), var(--white));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+.clickme {
+    backdrop-filter: blur(15px) brightness(0.6);
+    width: fit-content;
+    padding: 10px;
+    margin: 0;
+    transition: 0.2s;
+}
+.clickme:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.click-container {
+    width: 300px;
+}
+.click-info {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+.click-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    backdrop-filter: blur(15px) brightness(0.6);
+}
+.click-close {
+    width: 40px;
+    transition: 0.2s;
+}
+.click-close:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.click-text {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    backdrop-filter: blur(15px) brightness(0.6);
+}
+
+#return-button {
+    border: 2px solid var(--mainblue);
+    color: var(--mainblue);
+    background: white;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    #landing {
+        height: 95vh;
+        margin-bottom: 124px;
+    }
+    #landing-bottom {
+        display: flex;
+        width: 98%;
+        justify-content: space-between;
+    }
+    #article-title {
+        width: 50vw;
+        font-size: 60px;
+        line-height: 60px;
+
+    }
+    .article-section {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    #return-button {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .clickme {
+        font-size: 24px;
+    }
+    #click-container1 {
+        margin-left: 5%;
+    }
+    .click-info {
+        width: 40%;        
+        display: none;
+        position: absolute;
+        left: auto;
+    }
+
+}
+

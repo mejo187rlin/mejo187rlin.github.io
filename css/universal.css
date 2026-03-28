@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Hind:wght@300;400;500;600;700&display=swap');
+:root {
+    --mainblue: #212D43;
+    --lightblue: #76DDFF;
+    --white: #FFFFFF;
+    --text: #4B4B4B;
+}
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+    font-family: "Hind", sans-serif;
+}
+
+header {
+    position: fixed;
+    padding: 5%;
+    z-index: 5;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+h1, h2, h3 {
+    font-family: 'Big Shoulders';
+    background: -webkit-linear-gradient(0.9turn, var(--mainblue), var(--lightblue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    margin: 0;
+    font-weight: 700;
+}
+.header-2, h2 {
+    background: -webkit-linear-gradient(0.9turn, var(--mainblue), var(--lightblue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-family: 'Big Shoulders';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+h1 {
+    background: -webkit-linear-gradient(0.9turn, var(--white), var(--lightblue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 82px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 75px;
+}
+p {
+    font-size: 14px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Big Shoulders";
+    color: var(--mainblue);
+    background: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.button:hover {
+    cursor: pointer;
+    filter: brightness(0.7);
+}
+
+#menu-logo, #menu-open {
+    height: 40px;
+}
+#menu-logo:hover, #menu-open:hover {
+    cursor: pointer;
+}
+#menu-home, #menu-article {
+    text-decoration: none;
+    color: var(--mainblue);
+    margin-top: 20px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+#menu-home:hover, #menu-article:hover {
+    cursor: pointer;
+    border-bottom: 2px solid var(--mainblue);
+}
+
+#menu-body-darken {
+    position: fixed;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transition: 0.3s;
+}
+#menu-close {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    font-family: 'Big Shoulders';
+    background: white;
+    border-radius: 200px;
+    border: none;
+    align-self: start;
+    margin-bottom: 60px;
+    font-weight: 700;
+    color: var(--mainblue);
+    transition: 0.2s;
+}
+#menu-close:hover {
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 10;
+    background-color: var(--white);
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: 0.3s;
+    align-items: end;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 12vw;
+        line-height: 10.2vw;
+    }
+    header {
+        padding: 2%;
+        width: 96%;
+    }
+    h3 {
+        font-size: 24px;
+    }
+
+
+}
