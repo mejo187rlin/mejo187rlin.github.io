@@ -1,0 +1,102 @@
+#desktop-blob {
+    display: none;
+}
+#about-image {
+    width: 112%;
+    margin-top: 0;
+    margin-left: -20px;
+}
+#title {
+    margin: 0;
+    margin-top: 20px;
+}
+#about-content {
+    line-height: var(--mobile-text-lh);
+}
+#about-buttons {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#human-skills-button, #ai-opinion-button {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: var(--secondary-blue);
+    border: 1px solid var(--secondary-blue);
+    border-radius: 5px;
+    font-family: var(--font-sans);
+    font-size: var(--mobile-text);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+#ai-opinion-button {
+    margin-top: 8px;
+    background: white;
+    color: var(--secondary-blue);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+    #mobile-blob {
+        display: none;
+    }
+    #desktop-blob {
+        display: block;
+        position: absolute;
+        bottom: -10%;
+        width: 120%;
+        right: -10%;
+        z-index: -1;
+    }
+    #about-image {
+        width: 400px;
+        margin-left: 0;
+    }
+    #about-nontitle {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+    }
+    #title {
+        margin-top: 40px;
+        margin: 0;
+        line-height: 15vw;
+        position: absolute;
+        top: 120px;
+        z-index: 1;
+        left: 0;
+    }
+    #about-content {
+        padding: 40px;
+        line-height: var(--desktop-text-lh);
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    #about-buttons {
+        flex-direction: row;
+    }
+    #human-skills-button, #ai-opinion-button {
+        margin-top: 0;
+        margin-right: 8px;
+        padding: 10px;
+        width: 200px;
+        transition: 0.2s;
+    }
+    #human-skills-button:hover, #ai-opinion-button:hover {
+        filter: brightness(0.9);
+    }
+}
+
+
